@@ -1,0 +1,119 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #61003f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Button container */
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: #6E0148;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease; /* Smooth button transition */
+}
+
+button:hover {
+    background-color: #850259;
+}
+
+/* Birthday Card Layout */
+.birthday-card {
+    display: flex;
+    width: 70%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: scale(0);
+    animation: scaleUp 1s forwards;
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    padding: 10px;
+    background-color: #f8e1f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.left-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #6E0148;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.poem {
+    font-size: 18px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    pointer-events: none; /* Disable interaction during the transition */
+}
+
+/* This is for a fade effect on the entire card */
+.birthday-card {
+    transition: opacity 1s ease-out;
+}
+
+/* Animation for scaling up the card */
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

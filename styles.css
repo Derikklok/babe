@@ -1,0 +1,70 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Centers vertically in the viewport */
+}
+
+button {
+    background-color: #6E0148; /* Set the button color */
+    color: white; /* Text color */
+    font-size: 24px; /* Bigger font size */
+    padding: 20px 40px; /* Increase the padding for bigger button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #850259; /* Darker shade for hover effect */
+}
+
+/* Importing a romantic font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.heading-1 {
+    font-family: 'Dancing Script', cursive; /* Apply the romantic font */
+    font-size: 40px;
+    text-align: center;
+    color: #6E0148; /* You can change the color to match your theme */
+    margin-top: 20px;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #6E0148; /* Matching your color palette */
+    color: white; /* Text color */
+    font-family: 'Dancing Script', cursive; /* Romantic font style */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    border-top: 4px solid #850259; /* Darker border for subtle separation */
+    margin-top: 30px;
+}
+
+footer:hover {
+    background-color: #850259; /* Darken color when hovered */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+/* Styling for the header */
+header {
+    background-color: #6E0148; /* Matching your color palette */
+    color: white; /* Text color */
+    font-family: 'Dancing Script', cursive; /* Romantic font style */
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+    border-bottom: 4px solid #850259; /* Darker border for subtle separation */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header:hover {
+    background-color: #850259; /* Darken color when hovered */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+

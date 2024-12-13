@@ -1,0 +1,47 @@
+<!-- Card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Isali!</title>
+    <link rel="stylesheet" href="stylea.css">
+    <!-- Link the iframe style CSS -->
+
+
+</head>
+<body>
+    <div class="birthday-card">
+        <div class="left-section">
+            <img src="image1.jpg" alt="Image 1">
+            
+        </div>
+        <div class="right-section">
+            <h2>🎉Happy Birthday 💛Bbi!🎉</h2>
+            <p class="quote">"May this year bring you as much happiness as you bring to everyone around you 💖"</p>
+            <p class="poem">
+                Roses are red, <br>
+                Violets are blue, <br>
+                You're the light of my life, <br>
+                And I'll always love you! 💫<br>
+                Happy Birthday, 💛Bbi! 🎂
+            </p>
+            <button id="mysteriesButton">Mysteries ➡️ 😉</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('mysteriesButton').addEventListener('click', function() {
+    // Add the fade-out class to the card for transition
+    document.querySelector('.birthday-card').classList.add('fade-out');
+
+    // Wait for the fade-out transition to complete before redirecting
+    setTimeout(function() {
+        // Open the mystery-poem.html file in the same window
+        window.open('mystery-poem.html', '_self');
+    }, 1000); // Match the fade-out transition duration
+});
+    </script>
+</body>
+</html>
